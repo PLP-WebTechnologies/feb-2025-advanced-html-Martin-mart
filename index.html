@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <!-- External CSS (optional for styling purposes) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Beautiful Image</h2>
+        <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg" alt="Beautiful Landscape" style="width:100%;height:auto;">
+    </section>
+
+    <!-- Contact Table -->
+    <section>
+        <h2>Contact Information</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John James</td>
+                    <td>123 kenyatta St, City</td>
+                    <td>(254)12345678</td>
+                    <td>johnjames@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak St, Town</td>
+                    <td>(254)12345678</td>
+                    <td>janesmith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Sam Johnson</td>
+                    <td>789 nakuru St, Village</td>
+                    <td>(555) 345-6789</td>
+                    <td>samjohson@example.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Brown</td>
+                    <td>321 Njoro, Metro</td>
+                    <td>(254)1234567</td>
+                    <td>alicebrown@example.com</td>
+                </tr>
+                <tr>
+                    <td>Bob Green</td>
+                    <td>654 Maple inn, Sukari</td>
+                    <td>(254)1234567</td>
+                    <td>bobgreen@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="submit_form.php" method="POST">
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <!-- Dropdown for Gender -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <!-- Radio Buttons for Terms Acceptance -->
+            <label>Agree to Terms and Conditions:</label>
+            <input type="radio" id="accept" name="terms" value="accept" required>
+            <label for="accept">Accept</label>
+            <input type="radio" id="decline" name="terms" value="decline">
+            <label for="decline">Decline</label>
+            <br><br>
+
+            <!-- Checkboxes for Interests -->
+            <label>Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="travel" name="interests" value="travel">
+            <label for="travel">Travel</label>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+</body>
+</html>
